@@ -1,14 +1,14 @@
 //
-//  NotesApp.swift
-//  Notes
+//  Notes_FrontendApp.swift
+//  Notes Frontend
 //
-//  Created by Macbook Pro on 9/8/23.
+//  Created by Macbook Pro on 10/8/23.
 //
 
 import SwiftUI
 
 @main
-struct NotesApp: App {
+struct Notes_FrontendApp: App {
     var body: some Scene {
         WindowGroup {
             Home()
