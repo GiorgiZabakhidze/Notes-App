@@ -12,6 +12,7 @@
 		CEE964192A84DCD00080C529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE964182A84DCD00080C529 /* Assets.xcassets */; };
 		CEE9641D2A84DCD00080C529 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE9641C2A84DCD00080C529 /* Preview Assets.xcassets */; };
 		CEE964242A84EBAA0080C529 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE964232A84EBAA0080C529 /* AddNoteView.swift */; };
+		CEE964262A8509140080C529 /* UpdateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE964252A8509140080C529 /* UpdateNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CEE9641A2A84DCD00080C529 /* Notes_Frontend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notes_Frontend.entitlements; sourceTree = "<group>"; };
 		CEE9641C2A84DCD00080C529 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEE964232A84EBAA0080C529 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		CEE964252A8509140080C529 /* UpdateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				CEE964142A84DCCF0080C529 /* Notes_FrontendApp.swift */,
 				CEE964162A84DCCF0080C529 /* Home.swift */,
 				CEE964232A84EBAA0080C529 /* AddNoteView.swift */,
+				CEE964252A8509140080C529 /* UpdateNoteView.swift */,
 				CEE964182A84DCD00080C529 /* Assets.xcassets */,
 				CEE9641A2A84DCD00080C529 /* Notes_Frontend.entitlements */,
 				CEE9641B2A84DCD00080C529 /* Preview Content */,
@@ -145,6 +148,7 @@
 				CEE964242A84EBAA0080C529 /* AddNoteView.swift in Sources */,
 				CEE964172A84DCCF0080C529 /* Home.swift in Sources */,
 				CEE964152A84DCCF0080C529 /* Notes_FrontendApp.swift in Sources */,
+				CEE964262A8509140080C529 /* UpdateNoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

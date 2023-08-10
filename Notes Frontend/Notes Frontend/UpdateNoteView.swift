@@ -1,39 +1,40 @@
 //
-//  AddNoteView.swift
+//  UpdateNoteView.swift
 //  Notes Frontend
 //
-//  Created by Giorgi Zabakhidze on 10/8/23.
+//  Created by Macbook Pro on 10/8/23.
 //
 
 import SwiftUI
 
-struct AddNoteView: View {
-    @State var text = ""
-    
+struct UpdateNoteView: View {
     @Environment(\.presentationMode) var presentationMode
+    
+    @Binding var text: String
+    @Binding var noteId: String
     
     var body: some View {
         HStack {
-            TextField("Write a Note...", text: $text)
+            TextField("Update a Note...", text: $text)
                 .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 .clipped()
-            Button(action: postNote) {
-                Text("Add")
+            Button(action: updateNote) {
+                Text("Update")
             }
             .padding(8)
         }
     }
     
-    func postNote() {
+    func updateNote() {
         let params = ["note" : text] as [String:Any]
         
-        let url = URL(string: "http://localhost:3000/notes")!
+        let url = URL(string: "http://localhost:3000/notes/\(noteId)")!
         
         let session = URLSession.shared
         
         var request = URLRequest(url: url)
         
-        request.httpMethod = "POST"
+        request.httpMethod = "PATCH"
         
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
@@ -60,13 +61,8 @@ struct AddNoteView: View {
         
         task.resume()
         
-        self.text = ""
         presentationMode.wrappedValue.dismiss()
     }
 }
 
-struct AddNoteView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddNoteView()
-    }
-}
+

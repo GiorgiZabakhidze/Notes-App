@@ -2,7 +2,7 @@
 //  Notes_FrontendApp.swift
 //  Notes Frontend
 //
-//  Created by Macbook Pro on 10/8/23.
+//  Created by Giorgi Zabakhidze on 10/8/23.
 //
 
 import SwiftUI
